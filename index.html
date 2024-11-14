@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop.co - Find Clothes That Matches Your Style</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        /* Tambahkan beberapa gaya khusus untuk meniru desain */
+        .hero {
+            
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero img {
+            width: 100%;
+            max-width: 400px;
+        }
+        .hero h1 {
+            font-weight: bold;
+        }
+        .brands img {
+            width: 100px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header bg-black text-white d-flex align-items-center justify-content-center" style="position: relative;">
+        <span class="close-btn" onclick="closeHeader()">×</span>
+        <p class="mt-2 mb-0">
+            Sign up and get 20% off your first order.
+            <a href="#" class="text-white">Sign Up Now</a>
+        </p>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand shop" href="#">SHOP.CO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown ms-1 me-1">
+                    <a class="nav-link dropdown-toggle text-black" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Shop
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                        <li><a class="dropdown-item" href="#">Men's Clothing</a></li>
+                        <li><a class="dropdown-item" href="#">Women's Clothing</a></li>
+                        <li><a class="dropdown-item" href="#">Accessories</a></li>
+                        <li><a class="dropdown-item" href="#">Shoes</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item ms-1 me-1 text-black"><a class="nav-link" href="#">On Sale</a></li>
+                <li class="nav-item ms-1 me-1 text-black"><a class="nav-link" href="#">New Arrivals</a></li>
+                <li class="nav-item ms-1 me-1 text-black"><a class="nav-link me-3" href="#">Brands</a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 d-flex align-items-center">
+                <div class="position-relative me-3 text-black" style="width: 600px;">
+                    <i class="fas fa-search position-absolute" style="top: 50%; left: 15px; transform: translateY(-50%); color: #aaa;"></i>
+                    <input class="form-control ps-5 rounded-5 text-black" type="search" placeholder="Search for products..." aria-label="Search" style="width: 100%;">
+                </div>
+                
+                <!-- Icon keranjang dan profil di sebelah kanan -->
+                <i class="fas fa-shopping-cart me-3 ms-5" style="font-size: 1.1rem; cursor: pointer;"></i>
+                <i class="fas fa-user" style="font-size: 1.1rem; cursor: pointer;"></i>
+            </form>
+            
+        </div>
+    </nav>
+    
+
+    <!-- Hero Section -->
+    <section class="hero text-start" style="display: flex; align-items: center; gap: 40px;">
+    <div style="max-width: 50%;">
+        <p style="font-weight: 800; font-size: 60px; color: black; line-height: 0.8;">FIND CLOTHES <br>THAT MATCHES <br> YOUR STYLE</p>
+        <p>Browse through our diverse range of meticulously crafted garments, designed <br>to bring out your individuality and cater to your sense of style.</p>
+        <a href="#" class="btn btn-dark btn-lg rounded-5" style="background-color: black; font-size: 13px; padding-left: 55px; padding-right: 55px;">Shop Now</a>
+        <div class="mt-4" style="display: flex; gap: 40px; align-items: flex-start;">
+            <div style="text-align: left; position: relative;">
+                <span style="font-size: 30px; font-weight: bold; display: block;">200+</span>
+                <div>International Brands</div>
+            </div>
+            <div style="text-align: left; position: relative;">
+                <span style="font-size: 30px; font-weight: bold; display: block;">2,000+</span>
+                <div>High-Quality Products</div>
+            </div>
+            <div style="text-align: left; position: relative;">
+                <span style="font-size: 30px; font-weight: bold; display: block;">30,000+</span>
+                <div>Happy Customers</div>
+            </div>
+        </div>
+    </div>
+    <div style="flex: 1;">
+        <img src="20241114_111152.png" alt="" style="width:600px; max-width: 900px;">
+    </div>
+</section>
+
+    
+
+    <section class="text-center brands py-4" style="background-color: black;">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="col-auto px-3 mb-4"><img src="versace-removebg-preview.png" alt="Versace Logo" style="width: 250px; margin-top: 10px;"></div>
+                <div class="col-auto px-3 mb-4"><img src="zara.png" alt="Zara Logo" style="width: 150px;"></div>
+                <div class="col-auto px-3 mb-4"><img src="guci-removebg-preview.png" alt="Gucci Logo" style="width: 150px; margin-top: 20px;"></div>
+                <div class="col-auto px-3 mb-4"><img src="prada.png" alt="Prada Logo" style="width: 150px; margin-top: 22px;"></div>
+                <div class="col-auto px-3 mb-4"><img src="ck.png" alt="Calvin Klein Logo" style="width: 150px;"></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="new-arrivals-section text-black">
+        <div class="container text-center mt-5">
+            <h2 style="font-weight: 850;">NEW ARRIVALS</h2>
+        </div>
+        <div class="container mt-4">
+            <div class="row justify-content-center">
+                <div class="row text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 product-item">
+                                        <a href="link-to-product1.html">
+                                            <div class="product-img-wrapper rounded-4">
+                                                <img src="bismila.png" class="img-fluid" alt="New Arrival 1">
+                                            </div>
+                                        </a>
+                                        <h5 class="mt-2">Nama Barang 1</h5>
+                                        <p>⭐⭐⭐⭐☆</p>
+                                        <p class="text-muted">Rp100,000</p>
+                                    </div>
+                                    
+                                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 product-item">
+                                        <a href="link-to-product2.html">
+                                            <div class="product-img-wrapper rounded-4">
+                                                <img src="bismila.png" class="img-fluid" alt="New Arrival 2">
+                                            </div>
+                                        </a>
+                                        <h5 class="mt-2">Nama Barang 2</h5>
+                                        <p>⭐⭐⭐⭐⭐</p>
+                                        <p class="text-muted">Rp120,000</p>
+                                    </div>
+                                    
+                                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 product-item">
+                                        <a href="link-to-product3.html">
+                                            <div class="product-img-wrapper rounded-4">
+                                                <img src="bismila.png" class="img-fluid" alt="New Arrival 3">
+                                            </div>
+                                        </a>
+                                        <h5 class="mt-2">Nama Barang 3</h5>
+                                        <p>⭐⭐⭐☆☆</p>
+                                        <p class="text-muted">Rp150,000</p>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 product-item">
+                                        <a href="link-to-product4.html">
+                                            <div class="product-img-wrapper rounded-4">
+                                                <img src="bismila.png" class="img-fluid" alt="New Arrival 4">
+                                            </div>
+                                        </a>
+                                        <h5 class="mt-2">Nama Barang 4</h5>
+                                        <p>⭐⭐⭐☆☆</p>
+                                        <p class="text-muted">Rp150,000</p>
+                                    </div>
+                                </div>
+                            </div>       
+            </div>
+        </div>
+    </section>
+                
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+
+<!-- Bootstrap JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="boostrap/js/bootstrap.bundle.min.js.map"></script>
+    <script>
+        function closeHeader() {
+            document.querySelector('.header').style.display = 'none';
+        }
+        </script>
+</body>
+</html>

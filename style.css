@@ -1,0 +1,45 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.shop {
+    margin-left: 85px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+.hero{
+    text-align: left;
+    margin-left: 100px;
+}
+
+.mt-4 > div:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -20px; /* Adjust this value to position the line */
+    top: 0;
+    bottom: 0;
+    width: 1px; /* Adjust thickness */
+    background-color: black; /* Line color */
+    height: 100%;
+}
+
+.product-img-wrapper {
+    background-color: #e0e0e0; /* Warna abu-abu */
+}
+
+.header {
+    padding: 3px 0px; /* Adds consistent padding */
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 50%;          /* Centers vertically */
+    right: 10px;       /* Positions in the top-right corner */
+    transform: translateY(-50%); /* Adjusts to align with text */
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
